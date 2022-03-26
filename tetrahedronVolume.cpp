@@ -21,6 +21,6 @@ int main() {
     volume = pow(edge_length, 3) / (6 * sqrt(2));
 
     // output
-    std::cout << "Circumference is " << volume << " mm" << std::endl;
+    std::cout << "Circumference is " << volume << " cm³." << std::endl;
     std::cout << "\nDone." << std::endl;
 }
