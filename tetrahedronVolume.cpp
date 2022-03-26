@@ -6,22 +6,21 @@
 //     with dimensions inputted from user
 
 #include <iostream>
+#include <cmath>
 
 int main() {
     // I calculate circumference of a circle
-    const double TAU = 6.28;
-    int radius;
-    double circumference;
+    int edge_length;
+    float volume;
 
     // input
-    std::cout << "Enter radius of the circle in mm: ";
-    std::cin >> radius;
+    std::cout << "Input edge length of tetrahedron in cm: ";
+    std::cin >> edge_length;
 
     // process
-    circumference = TAU*radius;
+    volume = pow(edge_length, 3) / (6 * sqrt(3));
 
     // output
-    std::cout << "" << std::endl;
-    std::cout << "Circumference is " << circumference << " mm" << std::endl;
+    std::cout << "Circumference is " << volume << " mm" << std::endl;
     std::cout << "\nDone." << std::endl;
 }
