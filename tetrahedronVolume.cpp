@@ -18,7 +18,7 @@ int main() {
     std::cin >> edge_length;
 
     // process
-    volume = pow(edge_length, 3) / (6 * sqrt(3));
+    volume = pow(edge_length, 3) / (6 * sqrt(2));
 
     // output
     std::cout << "Circumference is " << volume << " mm" << std::endl;
